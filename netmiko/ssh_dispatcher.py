@@ -67,6 +67,8 @@ from netmiko.ruckus import RuckusFastironSSH
 from netmiko.ruckus import RuckusFastironTelnet
 from netmiko.terminal_server import TerminalServerSSH
 from netmiko.terminal_server import TerminalServerTelnet
+from netmiko.tplink import TpLinkJetstreamTelnet
+from netmiko.tplink.jetstream import TpLinkJetstreamSSH
 from netmiko.ubiquiti import UbiquitiEdgeSSH
 from netmiko.vyos import VyOSSSH
 from netmiko.oneaccess import OneaccessOneOSTelnet, OneaccessOneOSSSH
@@ -141,6 +143,7 @@ CLASS_MAPPER_BASE = {
     "quanta_mesh": QuantaMeshSSH,
     "rad_etx": RadETXSSH,
     "ruckus_fastiron": RuckusFastironSSH,
+    "tplink_jetstream": TpLinkJetstreamSSH,
     "ubiquiti_edge": UbiquitiEdgeSSH,
     "ubiquiti_edgeswitch": UbiquitiEdgeSSH,
     "vyatta_vyos": VyOSSSH,
@@ -196,6 +199,7 @@ CLASS_MAPPER["paloalto_panos_telnet"] = PaloAltoPanosTelnet
 CLASS_MAPPER["rad_etx_telnet"] = RadETXTelnet
 CLASS_MAPPER["ruckus_fastiron_telnet"] = RuckusFastironTelnet
 CLASS_MAPPER["oneaccess_oneos_telnet"] = OneaccessOneOSTelnet
+CLASS_MAPPER["tplink_jetstream_telnet"] = TpLinkJetstreamTelnet
 
 # Add serial drivers
 CLASS_MAPPER["cisco_ios_serial"] = CiscoIosSerial
