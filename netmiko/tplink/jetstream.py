@@ -58,7 +58,7 @@ class TpLinkJetstreamTelnet(TpLinkJetstreamBase):
         username_pattern=r"User:",
         pwd_pattern=r"assword:",
         delay_factor=1,
-        max_loops=20,
+        max_loops=200,
     ):
         """Telnet login: can be username/password or just password."""
         super(TpLinkJetstreamTelnet, self).telnet_login(
